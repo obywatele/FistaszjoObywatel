@@ -1,0 +1,91 @@
+<head>
+    <title>mObywatel</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/home.css">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4=w240-h480-rw">
+    <link rel="apple-touch-icon" href="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4=w240-h480-rw">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4=w240-h480-rw">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+    <div class="bottom_bar">
+        <div class="bottom_bar_grid">
+            <div class="bottom_element_grid" send="home">
+                <div class="bottom_element_image home_open home"></div>
+                <p class="bottom_element_text open">Pulpit</p>
+            </div>
+            <div class="bottom_element_grid" send="documents">
+                <div class="bottom_element_image documents"></div>
+                <p class="bottom_element_text">Dokumenty</p>
+            </div>
+            <div class="bottom_element_grid" send="services">
+                <div class="bottom_element_image services"></div>
+                <p class="bottom_element_text">Usługi</p>
+            </div>
+            <div class="bottom_element_grid" send="qr">
+                <div class="bottom_element_image qr"></div>
+                <p class="bottom_element_text">Kod QR</p>
+            </div>
+            <div class="bottom_element_grid" send="more">
+                <div class="bottom_element_image more"></div>
+                <p class="bottom_element_text">Więcej</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="top_grid">
+            <img src="images/coi_common_ui_ic_mobywatel_logo.svg" class="top_image">
+            <img src="images/ab013_notifications.svg" class="top_image right">
+        </div>
+        <div class="card_grid">
+            <p class="title">Dokumenty</p>
+            <button class="main_button">Dodaj</button>
+            <button class="main_button all_documents" onclick="sendTo('documents')">Wszystkie</button>
+        </div>
+        <div class="card" onclick="sendTo('card')">
+            <img class="background" src="images/CHANGE_IT_home_mid_card.svg">
+            <img class="human" src="images/coi_common_ui_ic_document_id.svg" width="33" height="35" >
+            <div class="id_bottom">
+                <p class="name">mDowód</p>
+                <img class="arrow" src="images/ic_arrow_forward_Dgray.svg">
+            </div>
+        </div>
+        <div class="card_below_grid">
+            <p class="title">Usługi</p>
+            <button class="main_button all_services" onclick="sendTo('services')">Wszystkie</button>
+        </div>
+        <div class="services_grid">
+            <div class="service_box">
+                <img class="service_box_icon" src="images/da035_bezpiecznie_w_sieci.svg">
+                <p class="service_box_name">Bezpiecznie w sieci</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="images/bilkomlogo.svg">
+                <p class="service_box_name">Blikom</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="images/da008_zastrzez_pesel.svg">
+                <p class="service_box_name">Zastrzeż PESEL</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="images/da031_mbiznes.svg">
+                <p class="service_box_name">Firma</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="images/da001_punkty_karne.svg">
+                <p class="service_box_name">Punkty karne</p>
+            </div>
+            <div class="service_box">
+                <img class="service_box_icon" src="images/recepta.png">
+                <p class="service_box_name">eRecepta</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/bar.js"></script>
+    <script src="assets/manifest.js"></script>
+</body>
